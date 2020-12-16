@@ -1,0 +1,60 @@
+* {
+    font-family: Helvetica, sans-serif;
+    transform-style: preserve-3d;
+    
+    padding: 0;
+  }
+  
+  body {
+    background: #ffffff;
+
+  }
+
+  .container{
+    position: relative;
+    column-count: 4;
+    padding: 20px;
+  }
+
+  .image{
+    display: inline-block;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  #img{
+    width: 100%;
+    transition: 0.25 ease-in-out;
+  }
+
+  .image:hover #img{
+    transform: scale(1.1);
+  }
+
+ 
+
+  #img:hover{
+    opacity: 0.5;
+  }
+
+  
+
+  @media screen and (max-width: 768px){
+    .container{
+      column-count: 3;
+    }
+  }
+
+  @media screen and (max-width: 425px){
+    .container{
+      column-count: 2;
+    }
+    
+  }
+  @media screen and (max-width: 375px){
+    .container{
+      column-count: 1;
+    }
+    
+  }
+  
